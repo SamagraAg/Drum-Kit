@@ -4,16 +4,16 @@ body {
 }
 
 h1 {
-
+color: #F2F7A1;
     font-size: 5rem;
     line-height: 2;
     font-family: 'Zen Dots', cursive;
-    text-shadow: 3px 0 #FFFFFF;
+    text-shadow: 5px 0 #E94560;
 
 }
 
 footer {
-    color: #181D31;
+    color: #FFFFFF;
     font-family: sans-serif;
     font-weight: 600;
 }
@@ -21,9 +21,9 @@ footer {
 .set {
     margin: 10% auto;
 }
-
+/* F1D3B3 */
 .drum {
-    border: 10px solid #F1D3B3;
+    border: 10px solid #4C3575;
     font-size: 5rem;
     font-family: 'Zen Dots', cursive;
     width: 150px;
