@@ -21,7 +21,7 @@ footer {
 .set {
     margin: 10% auto;
 }
-/* F1D3B3 */
+/*  */
 .drum {
     border: 10px solid #4C3575;
     font-size: 5rem;
@@ -57,4 +57,9 @@ footer {
 }
 .l{
     background-image: url("images/kick.png");
+}
+
+.pressed{
+    box-shadow: 0 3px 4px 0 #F1D3B3;
+    opacity: 0.5;
 }
