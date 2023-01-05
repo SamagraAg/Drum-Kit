@@ -4,19 +4,20 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
         var buttonInnerHtml = this.id;
         //"this" us the identity of button which triggered the event 
-        
+
         playSound(buttonInnerHtml);
+        buttonAnimation(buttonInnerHtml);
     });
 }
 
 //For Handling Pressing of Keyboard Keys
 document.addEventListener("keydown", function (event) {
     playSound(event.key);
+    buttonAnimation(event.key);
 });
 
 //Function to play Sound
-function playSound (keyPressed)
-{
+function playSound(keyPressed) {
     switch (keyPressed) {
         case "w":
             var tom1 = new Audio("sounds/tom-1.mp3");
@@ -50,4 +51,14 @@ function playSound (keyPressed)
         default:
             break;
     }
+}
+
+function buttonAnimation(keyPressed) {
+    var currButton = document.querySelector("." + keyPressed);
+    function toggleAnimation() {
+        currButton.classList.toggle("pressed");
+    }
+    toggleAnimation();
+    setTimeout(toggleAnimation, 100);
+
 }
